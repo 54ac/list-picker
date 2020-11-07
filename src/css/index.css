@@ -98,6 +98,15 @@ li {
 	user-select: text;
 }
 
+a {
+	color: black;
+}
+
+footer {
+	padding-top: 1em;
+	font-size: 0.8em;
+}
+
 .party {
 	display: inline-block;
 	animation-duration: 3000ms;
