@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="it picks things" />
+		<title>list picking thing</title>
+	</head>
+	<body>
+		<div id="container">
+			<label id="listLabel" for="list"
+				>put your list below:<br /><span id="listLabelSpan"
+					>(one entry per line)</span
+				></label
+			>
+			<textarea id="list"></textarea>
+			<p>
+				<label for="amount">how many things do you want?</label
+				><input
+					type="number"
+					inputmode="numeric"
+					id="amount"
+					min="1"
+					value="1"
+					max="1"
+				/>
+			</p>
+			<button type="button" id="doIt" disabled>pick</button>
+			<p id="pickP" style="display: none;">
+				<span class="party">🎉</span><span id="pickSpan"></span
+				><span class="party">🎉</span>
+			</p>
+			<div id="pickContainer" style="display: none;">
+				<p id="pick"></p>
+				<ol></ol>
+				<button type="button" id="copy" style="display: none;">
+					copy list
+				</button>
+			</div>
+		</div>
+	</body>
+</html>

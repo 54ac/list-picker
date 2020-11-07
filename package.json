@@ -1,0 +1,55 @@
+{
+	"name": "list-picker",
+	"description": "A simple decision-making tool written in Javascript for picking elements from a list.",
+	"author": {
+		"name": "rowrawer",
+		"email": "rowrawer@gmail.com",
+		"url": "https://github.com/rowrawer"
+	},
+	"repository": "github:rowrawer/list-picker",
+	"version": "1.0.0",
+	"scripts": {
+		"start": "webpack --mode=development --watch",
+		"build": "cross-env NODE_ENV=production webpack --mode=production"
+	},
+	"private": true,
+	"browserslist": [
+		">1%",
+		"last 4 versions",
+		"Firefox ESR",
+		"not ie < 9"
+	],
+	"dependencies": {
+		"knuth-shuffle": "^1.0.8",
+		"normalize.css": "^8.0.1"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.12.0",
+		"@babel/preset-env": "^7.12.0",
+		"ajv": "^6.12.6",
+		"autoprefixer": "^9.8.6",
+		"babel-loader": "^8.1.0",
+		"browser-sync": "^2.26.12",
+		"browser-sync-webpack-plugin": "2.2.2",
+		"browserslist": "^4.14.5",
+		"clean-webpack-plugin": "^3.0.0",
+		"copy-webpack-plugin": "^6.2.1",
+		"cross-env": "^7.0.2",
+		"css-loader": "^4.3.0",
+		"cssnano": "^4.1.10",
+		"file-loader": "^6.1.1",
+		"html-webpack-plugin": "^4.5.0",
+		"mini-css-extract-plugin": "^0.9.0",
+		"optimize-css-assets-webpack-plugin": "^5.0.4",
+		"postcss-flexbugs-fixes": "^4.2.1",
+		"postcss-loader": "^3.0.0",
+		"postcss-preset-env": "^6.7.0",
+		"style-loader": "^1.3.0",
+		"terser-webpack-plugin": "^4.2.3",
+		"url-loader": "^4.1.1",
+		"webpack": "^4.44.2",
+		"webpack-bundle-analyzer": "^3.9.0",
+		"webpack-cli": "^3.3.12",
+		"workbox-webpack-plugin": "^5.1.4"
+	}
+}

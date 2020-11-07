@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f5f5f5;
+	color: #101010;
+	user-select: none;
+	font-family: "Lora", serif;
+	font-size: 1.25em;
+	text-align: center;
+	padding-left: calc(100vw - 100%);
+	overflow-x: hidden;
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	align-items: center;
+}
+
+#listLabel {
+	padding-top: 2em;
+}
+
+#listLabelSpan {
+	font-size: 0.8em;
+}
+
+textarea {
+	margin: 1em 0;
+	width: 33vw;
+	min-height: 15em;
+	height: 15em;
+	padding: 0 0.5em;
+}
+
+input {
+	display: block;
+	width: 15%;
+	margin: 0.5em auto 0;
+	text-align: center;
+}
+
+p {
+	display: inline-block;
+	margin: 0;
+}
+
+#doIt {
+	margin: 1em 0 1.75em;
+	padding: 1em;
+	font-size: 1.25em;
+}
+
+#copy {
+	padding: 0.5em;
+	margin-top: 1.25em;
+}
+
+#pickContainer {
+	width: 33vw;
+	padding-bottom: 0.75em;
+}
+
+#pickContainer > * {
+	text-align: left;
+}
+
+ol {
+	width: 100%;
+	margin: 0;
+	font-size: 1.15em;
+	user-select: text;
+}
+
+li {
+	line-height: 1.5em;
+}
+
+#pickP {
+	font-size: 1.33em;
+	padding: 0.25em 0 1em 0;
+}
+
+#pickSpan {
+	padding: 0 0.25em;
+	font-size: 1.33em;
+}
+
+#pick {
+	font-size: 1.25em;
+	max-width: 50vw;
+	line-height: 1.5em;
+	user-select: text;
+}
+
+.party {
+	display: inline-block;
+	animation-duration: 3000ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-name: spin;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@media (orientation: portrait) {
+	#container {
+		display: block;
+	}
+
+	#container > * {
+		display: block;
+	}
+
+	#listLabel {
+		padding-top: 1em;
+	}
+
+	textarea {
+		width: 100%;
+	}
+
+	#doIt {
+		padding: 0.25em 1em;
+	}
+
+	#doIt,
+	#copy {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#pickContainer {
+		width: 100%;
+	}
+
+	#pick {
+		text-align: center;
+		width: 100%;
+		max-width: 100%;
+	}
+}
