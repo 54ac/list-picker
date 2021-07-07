@@ -1,7 +1,7 @@
 "use strict";
 
-import "normalize.css";
-import "../css/index.css";
+import "../node_modules/modern-normalize/modern-normalize.css";
+import "./main.css";
 import { knuthShuffle } from "knuth-shuffle";
 
 const doItButton = document.querySelector("#doIt");
@@ -18,7 +18,7 @@ const checkMaxAmount = () =>
 	(amount.value =
 		parseInt(amount.value) > amount.max ? amount.max : amount.value);
 
-const eToLi = e => {
+const eToLi = (e) => {
 	const element = document.createElement("li");
 	element.textContent = e;
 	return element;
@@ -26,7 +26,7 @@ const eToLi = e => {
 
 const copy = () => {
 	const entriesCopy = Array.from(pickList.childNodes)
-		.map(e => e.textContent)
+		.map((e) => e.textContent)
 		.join("\n");
 
 	const copyEl = document.createElement("textarea");
@@ -49,7 +49,7 @@ doItButton.onclick = () => {
 	checkMaxAmount();
 
 	const listShuffled = knuthShuffle(
-		textArea.value.split("\n").filter(e => e)
+		textArea.value.split("\n").filter((e) => e)
 	).slice(0, amountInt);
 
 	pickContainer.style.display = "";
@@ -65,16 +65,16 @@ doItButton.onclick = () => {
 	} else {
 		pickSpan.textContent = "the picks:";
 		pickList.textContent = "";
-		listShuffled.forEach(e => pickList.appendChild(eToLi(e)));
+		listShuffled.forEach((e) => pickList.appendChild(eToLi(e)));
 		pickList.style.display = "";
 		copyButton.style.display = "";
 	}
 };
 
 textArea.oninput = () => {
-	if (textArea.value.split("\n").filter(e => e).length > 1) {
+	if (textArea.value.split("\n").filter((e) => e).length > 1) {
 		doItButton.disabled = false;
-		amount.max = textArea.value.split("\n").filter(e => e).length - 1;
+		amount.max = textArea.value.split("\n").filter((e) => e).length - 1;
 	} else {
 		doItButton.disabled = true;
 		amount.max = 1;
