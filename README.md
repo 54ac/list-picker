@@ -2,7 +2,7 @@
 
 ### What is this?
 
-This is an extremely simple tool for picking one or more elements from a list. Written in vanilla Javascript, based on [Athlon's boilerplate](https://github.com/WeAreAthlon/frontend-webpack-boilerplate). Mostly for personal use.
+This is an extremely simple tool for picking one or more elements from a list. Written in vanilla Javascript. Mostly for personal use.
 
 ### What's the point?
 
