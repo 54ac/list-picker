@@ -15,7 +15,7 @@ I needed something that could pick things for me, so I made it. Decision-making 
 
 ### Where can I use this?
 
-**[Here it is.](https://rowrawer.cf:5455/)**
+**[Here it is.](https://rowrawer.com:5455/)**
 
 ### How do I launch this myself?
 
