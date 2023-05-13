@@ -15,10 +15,10 @@ I needed something that could pick things for me, so I made it. Decision-making 
 
 ### Where can I use this?
 
-**[Here it is.](https://rowrawer.com:5455/)**
+**[Here it is.](https://54ac.bio:5455/)**
 
 ### How do I launch this myself?
 
-1. `git clone https://github.com/rowrawer/list-picker.git .`
+1. `git clone https://github.com/54ac/list-picker.git .`
 2. `npm i`
 3. `npm start`
