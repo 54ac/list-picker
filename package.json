@@ -2,11 +2,11 @@
 	"name": "list-picker",
 	"description": "A simple decision-making tool written in Javascript for picking elements from a list.",
 	"author": {
-		"name": "rowrawer",
-		"email": "rowrawer@gmail.com",
-		"url": "https://github.com/rowrawer"
+		"name": "54ac",
+		"email": "me@54ac.bio",
+		"url": "https://github.com/54ac"
 	},
-	"repository": "github:rowrawer/list-picker",
+	"repository": "github:54ac/list-picker",
 	"version": "1.1.0",
 	"scripts": {
 		"build": "rd /s /q public && mkdir public && rollup -c",
