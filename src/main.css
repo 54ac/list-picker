@@ -1,3 +1,4 @@
+@import "../node_modules/modern-normalize/modern-normalize.css";
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 
 body {
@@ -29,16 +30,18 @@ body {
 textarea {
 	margin: 1em 0;
 	width: 33vw;
-	min-height: 15em;
-	height: 15em;
+	min-height: 17.5em;
+	height: 17.5em;
 	padding: 0 0.5em;
+	font-size: 0.8em;
 }
 
 input {
 	display: block;
-	width: 15%;
+	width: 20%;
 	margin: 0.5em auto 0;
 	text-align: center;
+	font-size: 0.8em;
 }
 
 p {
@@ -55,6 +58,7 @@ p {
 #copy {
 	padding: 0.5em;
 	margin-top: 1.25em;
+	font-size: 0.8em;
 }
 
 #pickContainer {

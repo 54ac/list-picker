@@ -1,8 +1,4 @@
-"use strict";
-
-import "../node_modules/modern-normalize/modern-normalize.css";
-import "./main.css";
-import { knuthShuffle } from "knuth-shuffle";
+import arrayShuffle from "array-shuffle";
 
 const doItButton = document.querySelector("#doIt");
 const copyButton = document.querySelector("#copy");
@@ -48,7 +44,7 @@ doItButton.onclick = () => {
 
 	checkMaxAmount();
 
-	const listShuffled = knuthShuffle(
+	const listShuffled = arrayShuffle(
 		textArea.value.split("\n").filter((e) => e)
 	).slice(0, amountInt);
 
@@ -81,4 +77,5 @@ textArea.oninput = () => {
 	}
 };
 
+amount.max = textArea.value.split("\n").filter((e) => e).length - 1;
 amount.onchange = checkMaxAmount;
