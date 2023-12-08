@@ -108,10 +108,6 @@ backButton.onclick = () => {
 amount.max = textArea.value.split("\n").filter((e) => e).length - 1;
 amount.onchange = checkMaxAmount;
 
-for (let i = 0; i < pickElements.length; i++) {
-	pickElements[i].style.display = "none";
-}
-
 if (navigator.serviceWorker) {
 	const sw = "service-worker.js";
 	window.addEventListener("load", () => navigator.serviceWorker.register(sw));
