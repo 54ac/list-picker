@@ -132,17 +132,12 @@ footer {
 
 @media (orientation: portrait) {
 	#container {
-		display: block;
 		min-width: 100%;
 		width: 100%;
 	}
 
-	#container > * {
-		display: block;
-	}
-
 	#listLabel {
-		padding-top: 1em;
+		padding-top: 1.5em;
 	}
 
 	#listTextarea {
@@ -151,6 +146,11 @@ footer {
 
 	#doIt {
 		padding: 0.25em 1em;
+		margin-bottom: 1.5em;
+	}
+
+	#amount {
+		margin-top: 1em;
 	}
 
 	#doIt,
@@ -158,5 +158,14 @@ footer {
 	#back {
 		margin-right: auto;
 		margin-left: auto;
+	}
+
+	#copy {
+		margin-top: 2.5em;
+	}
+
+	#back {
+		margin-top: 1.5em;
+		margin-bottom: 1.5em;
 	}
 }

@@ -11,9 +11,11 @@ const pickList = document.getElementById("pickList");
 const listElements = document.getElementsByClassName("list");
 const pickElements = document.getElementsByClassName("pick");
 
-const checkMaxAmount = () =>
-	(amount.value =
-		parseInt(amount.value) > amount.max ? amount.max : amount.value);
+const checkMaxAmount = () => {
+	if (isNaN(amount.value)) amount.value = 1;
+	else if (amount.value < 1) amount.value = 1;
+	else if (amount.value > amount.max) amount.value = amount.max;
+};
 
 const eToLi = (e) => {
 	const element = document.createElement("li");
@@ -44,9 +46,8 @@ const copy = () => {
 copyButton.onclick = copy;
 
 doItButton.onclick = () => {
-	const amountInt = parseInt(amount.value);
-
 	checkMaxAmount();
+	const amountInt = parseInt(amount.value);
 
 	const listShuffled = arrayShuffle(
 		textArea.value.split("\n").filter((e) => e)
@@ -108,7 +109,9 @@ backButton.onclick = () => {
 amount.max = textArea.value.split("\n").filter((e) => e).length - 1;
 amount.onchange = checkMaxAmount;
 
+if (window.matchMedia("(orientation: portrait)").matches) amount.type = "text";
+
 if (navigator.serviceWorker) {
 	const sw = "service-worker.js";
-	window.addEventListener("load", () => navigator.serviceWorker.register(sw));
+	window.onload = () => navigator.serviceWorker.register(sw);
 }
