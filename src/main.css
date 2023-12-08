@@ -17,6 +17,9 @@ body {
 	flex-direction: column;
 	height: 100vh;
 	align-items: center;
+	max-width: 33vw;
+	min-width: 512px;
+	margin: 0 auto;
 }
 
 #listLabel {
@@ -27,9 +30,9 @@ body {
 	font-size: 0.8em;
 }
 
-textarea {
+#listTextarea {
 	margin: 1em 0;
-	width: 33vw;
+	width: 100%;
 	min-height: 17.5em;
 	height: 17.5em;
 	padding: 0 0.5em;
@@ -55,22 +58,21 @@ p {
 	font-size: 1.25em;
 }
 
-#copy {
+#copy,
+#back {
 	padding: 0.5em;
-	margin-top: 1.25em;
+	margin-top: 3em;
 	font-size: 0.8em;
 }
 
-#pickContainer {
-	width: 33vw;
-	padding-bottom: 0.75em;
+#back {
+	padding: 0.5em;
+	font-size: 0.8em;
+	margin-top: 1em;
+	margin-bottom: 3em;
 }
 
-#pickContainer > * {
-	text-align: left;
-}
-
-ol {
+#pickList {
 	width: 100%;
 	margin: 0;
 	font-size: 1.15em;
@@ -81,7 +83,11 @@ li {
 	line-height: 1.5em;
 }
 
-#pickP {
+.pick {
+	display: none;
+}
+
+#pickHeader {
 	font-size: 1.33em;
 	padding: 0.25em 0 1em 0;
 }
@@ -91,11 +97,11 @@ li {
 	font-size: 1.33em;
 }
 
-#pick {
+#pickSingle {
 	font-size: 1.25em;
-	max-width: 50vw;
 	line-height: 1.5em;
 	user-select: text;
+	width: 100%;
 }
 
 a {
@@ -127,6 +133,8 @@ footer {
 @media (orientation: portrait) {
 	#container {
 		display: block;
+		min-width: 100%;
+		width: 100%;
 	}
 
 	#container > * {
@@ -137,7 +145,7 @@ footer {
 		padding-top: 1em;
 	}
 
-	textarea {
+	#listTextarea {
 		width: 100%;
 	}
 
@@ -146,18 +154,9 @@ footer {
 	}
 
 	#doIt,
-	#copy {
+	#copy,
+	#back {
 		margin-right: auto;
 		margin-left: auto;
-	}
-
-	#pickContainer {
-		width: 100%;
-	}
-
-	#pick {
-		text-align: center;
-		width: 100%;
-		max-width: 100%;
 	}
 }

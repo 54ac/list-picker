@@ -1,25 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="it picks things" />
 		<meta name="theme-color" content="#f5f5f5" />
+		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
 		<link rel="stylesheet" href="main.css" />
-		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<link rel="icon" type="image/x-icon" href="icon.png" />
+		<link rel="apple-touch-icon" href="icon.png" />
+		<link rel="manifest" href="manifest.webmanifest" />
 		<title>list picking thing</title>
 	</head>
 	<body>
 		<div id="container">
-			<label id="listLabel" for="list"
-				>put your list below:<br /><span id="listLabelSpan"
-					>(one entry per line)</span
-				></label
-			>
-			<textarea id="list"></textarea>
-			<p>
-				<label for="amount">how many things do you want?</label
-				><input
+			<label id="listLabel" for="listTextarea" class="list">
+				put your list below:<br />
+				<span id="listLabelSpan">(one entry per line)</span>
+			</label>
+			<textarea id="listTextarea" class="list"></textarea>
+			<p class="list">
+				<label for="amount">how many things do you want?</label>
+				<input
 					type="number"
 					inputmode="numeric"
 					id="amount"
@@ -29,15 +31,15 @@
 				/>
 			</p>
 			<button type="button" id="doIt" disabled>pick</button>
-			<p id="pickP" style="display: none">
-				<span class="party">🎉</span><span id="pickSpan"></span
-				><span class="party">🎉</span>
+			<p id="pickHeader" class="pick">
+				<span class="party">🎉</span>
+				<span id="pickSpan"></span>
+				<span class="party">🎉</span>
 			</p>
-			<div id="pickContainer" style="display: none">
-				<p id="pick"></p>
-				<ol></ol>
-				<button type="button" id="copy" style="display: none">copy list</button>
-			</div>
+			<p id="pickSingle"></p>
+			<ol id="pickList"></ol>
+			<button type="button" id="copy" style="display: none">copy list</button>
+			<button type="button" id="back" class="pick">back</button>
 			<footer>
 				<p>
 					this is a demo of
@@ -45,8 +47,9 @@
 						target="_blank"
 						rel="noreferrer noopener"
 						href="https://github.com/54ac/list-picker"
-						>this github repository</a
 					>
+						this github repository
+					</a>
 				</p>
 			</footer>
 		</div>

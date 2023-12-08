@@ -1,0 +1,15 @@
+{
+	"short_name": "list picking thing",
+	"name": "list picking thing",
+	"icons": [
+		{
+			"src": "icon.png",
+			"type": "image/png",
+			"sizes": "512x512 any maskable"
+		}
+	],
+	"start_url": ".",
+	"display": "standalone",
+	"theme_color": "#f5f5f5",
+	"background_color": "#f5f5f5"
+}

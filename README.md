@@ -2,7 +2,7 @@
 
 ### What is this?
 
-This is an extremely simple tool for picking one or more elements from a list. Written in vanilla Javascript. Mostly for personal use.
+This is an extremely simple tool for picking one or more elements from a list. Written in vanilla Javascript with installable PWA support. Mostly for personal use.
 
 ### What's the point?
 
@@ -11,7 +11,8 @@ I needed something that could pick things for me, so I made it. Decision-making 
 ### How do I use this?
 
 1. Enter list (one entry per line),
-2. Press the pick button.
+2. Press the pick button,
+3. Install as PWA for easy access (optional).
 
 ### Where can I use this?
 
