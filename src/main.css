@@ -12,6 +12,21 @@ body {
 	overflow-x: hidden;
 }
 
+a {
+	color: #101010;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #101010;
+		color: #f5f5f5;
+	}
+
+	a {
+		color: #f5f5f5;
+	}
+}
+
 #container {
 	display: flex;
 	flex-direction: column;
@@ -102,10 +117,6 @@ li {
 	line-height: 1.5em;
 	user-select: text;
 	width: 100%;
-}
-
-a {
-	color: black;
 }
 
 footer {
