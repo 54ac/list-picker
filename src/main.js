@@ -28,17 +28,7 @@ const copy = () => {
 		.map((e) => e.textContent)
 		.join("\n");
 
-	if (navigator.clipboard) navigator.clipboard.writeText(entriesCopy);
-	else {
-		const copyEl = document.createElement("textarea");
-		copyEl.value = entriesCopy;
-		copyEl.style.position = "absolute";
-		copyEl.style.left = "-5454px";
-		document.body.appendChild(copyEl);
-		copyEl.select();
-		document.execCommand("copy");
-		document.body.removeChild(copyEl);
-	}
+	navigator.clipboard.writeText(entriesCopy);
 	copyButton.textContent = "copied list";
 	setTimeout(() => (copyButton.textContent = "copy list"), 3000);
 };
@@ -107,11 +97,6 @@ backButton.onclick = () => {
 };
 
 amount.max = textArea.value.split("\n").filter((e) => e).length - 1;
-amount.onchange = checkMaxAmount;
+textArea.onblur = checkMaxAmount;
 
 if (window.matchMedia("(orientation: portrait)").matches) amount.type = "text";
-
-if (navigator.serviceWorker) {
-	const sw = "service-worker.js";
-	window.onload = () => navigator.serviceWorker.register(sw);
-}

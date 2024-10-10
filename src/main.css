@@ -1,11 +1,11 @@
-@import "../node_modules/modern-normalize/modern-normalize.css";
+@import url("../node_modules/modern-normalize/modern-normalize.css");
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 
 body {
 	background-color: #f5f5f5;
 	color: #101010;
 	user-select: none;
-	font-family: "Lora", serif;
+	font-family: Lora, serif;
 	font-size: 1.25em;
 	text-align: center;
 	padding-left: calc(100vw - 100%);
@@ -104,7 +104,7 @@ li {
 
 #pickHeader {
 	font-size: 1.33em;
-	padding: 0.25em 0 1em 0;
+	padding: 0.25em 0 1em;
 }
 
 #pickSpan {
@@ -136,6 +136,7 @@ footer {
 	from {
 		transform: rotate(0deg);
 	}
+
 	to {
 		transform: rotate(360deg);
 	}
