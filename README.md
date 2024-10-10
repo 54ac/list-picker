@@ -1,8 +1,8 @@
-## The List Picking Thing
+## The List Picker
 
 ### What is this?
 
-This is an extremely simple tool for picking one or more elements from a list. Written in vanilla Javascript with installable PWA support. Mostly for personal use.
+This is an extremely simple tool for picking one or more elements from a list. Written in vanilla JavaScript with installable PWA support. Mostly for personal use.
 
 ### What's the point?
 
