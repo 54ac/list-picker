@@ -3,6 +3,7 @@ import { VitePWA } from "vite-plugin-pwa";
 export default {
 	plugins: [
 		VitePWA({
+			registerType: "autoUpdate",
 			includeAssets: ["favicon.ico"],
 			manifest: {
 				short_name: "the list picker",
