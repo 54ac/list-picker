@@ -16,7 +16,7 @@ I needed something that could pick things for me, so I made it. Decision-making 
 
 ### Where can I use this?
 
-**[Here it is.](https://54ac.ovh:5455/)**
+**[Here it is.](https://54ac.ovh/list-pick)**
 
 ### How do I launch this myself?
 

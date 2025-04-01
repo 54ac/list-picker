@@ -20,5 +20,6 @@ export default {
 				background_color: "#f5f5f5"
 			}
 		})
-	]
+	],
+	base: "/list-pick"
 };

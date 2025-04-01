@@ -12,9 +12,12 @@ const listElements = document.getElementsByClassName("list");
 const pickElements = document.getElementsByClassName("pick");
 
 const checkMaxAmount = () => {
-	if (isNaN(amount.value)) amount.value = 1;
-	else if (amount.value < 1) amount.value = 1;
-	else if (amount.value > amount.max) amount.value = amount.max;
+	const amountInt = parseInt(amount.value);
+	const maxInt = parseInt(amount.max);
+
+	if (isNaN(amountInt)) amount.value = 1;
+	else if (amountInt < 1) amount.value = 1;
+	else if (amountInt > maxInt) amount.value = amount.max;
 };
 
 const eToLi = (e) => {
