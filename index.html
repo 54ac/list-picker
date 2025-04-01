@@ -10,17 +10,17 @@
 		<link rel="stylesheet" href="/src/main.css" />
 		<link rel="icon" type="image/x-icon" href="/icon.png" />
 		<link rel="apple-touch-icon" href="/icon.png" />
-		<title>the list picker</title>
+		<title>The List Picker</title>
 	</head>
 	<body>
 		<div id="container">
 			<label id="listLabel" for="listTextarea" class="list">
-				put your list below:<br />
+				Input your list below:<br />
 				<span id="listLabelSpan">(one entry per line)</span>
 			</label>
 			<textarea id="listTextarea" class="list"></textarea>
 			<p class="list">
-				<label for="amount">how many things do you want?</label>
+				<label for="amount">How many things do you want?</label>
 				<input
 					type="number"
 					pattern="[0-9]*"
@@ -31,7 +31,7 @@
 					max="1"
 				/>
 			</p>
-			<button type="button" id="doIt" disabled>pick</button>
+			<button type="button" id="doIt" disabled>Pick</button>
 			<p id="pickHeader" class="pick">
 				<span class="party">🎉</span>
 				<span id="pickSpan"></span>
@@ -39,18 +39,18 @@
 			</p>
 			<p id="pickSingle"></p>
 			<ol id="pickList"></ol>
-			<button type="button" id="copy" style="display: none">copy list</button>
-			<button type="button" id="back" class="pick">back</button>
+			<button type="button" id="copy" style="display: none">Copy list</button>
+			<button type="button" id="back" class="pick">Back</button>
 			<footer>
 				<p>
-					this is a demo of
+					This is a demo of
 					<a
 						target="_blank"
 						rel="noreferrer noopener"
 						href="https://github.com/54ac/list-picker"
 					>
-						this github repository
-					</a>
+						this GitHub repository </a
+					>.
 				</p>
 			</footer>
 		</div>
